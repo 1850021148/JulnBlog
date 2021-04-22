@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好,我是Juln</title>
+    <link rel="Shortcut Icon" href="../src/mao.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/total.css">
+</head>
+<body>
+
+    <div class="my-audio">
+
+        <audio id="audio" src="../src/music/江湖-许嵩.mp3"></audio>
+
+        <div class="play"></div>
+        <div class="next"></div>
+        <div class="details">
+            <p class="songname">江湖</p>
+            <p class="songer">许嵩</p>
+        </div>
+
+    </div>
+
+    <div id="min-lyric-box">
+        <p class="first"> 作曲 : 许嵩</p>
+        <p class="second"> 作词 : 许嵩</p>
+    </div>
+
+    <header>
+
+        <h1>Juln</h1>
+
+        <nav>
+            <li class="active">首页</li>
+            <li>博客</li>
+            <li>音乐</li>
+            <li>设置</li>
+        </nav>
+
+    </header>
+
+    <div class="scroll">
+
+        <article>
+
+        </article>
+
+        <footer>
+            <p>联系方式</p>
+            <p>QQ: 1850021148</p>
+        </footer>
+
+    </div>
+</body>
+<script src="../js/total.js"></script>
+<script>
+    $$('header>nav>li').forEach(li => {
+        li.onclick = () => {
+            $$('header>nav>li').forEach( li => li.classList.remove('active') )
+            li.classList.add('active')
+            reRender()
+        }
+    })
+</script>
+</html>

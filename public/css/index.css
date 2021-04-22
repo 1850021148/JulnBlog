@@ -1,0 +1,26 @@
+#index-body{
+    width: 100vw;
+    padding: 80px 20%;
+}
+#index-body>p{
+    min-height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+#index-body>.hai{
+    font-size: 25px;
+}
+#index-body>.details{
+    font-size: 16px;
+    opacity: .8;
+}
+#index-body>.show-ablum-txt{
+    font-size: 16px;
+    opacity: .5;
+}
+#index-body>.show-ablum-txt>a{
+    cursor: pointer;
+}
+#index-body>.show-ablum-txt>a:hover{
+    opacity: .5;
+}
